@@ -16,7 +16,7 @@ function TodoList() {
 
     const onSubmit = (data) => {
         setTodos([...todos, { id: Date.now(), text: data.task, completed: false }]);
-        reset(); // Очистка поля ввода после добавления задачи
+        reset(); 
     };
 
     const toggleTodo = (id) => {
