@@ -7,7 +7,6 @@ import NoteFound from "./components/NoteFound";
 import MyErrorBoundary from './components/ErrorBoundary';
 
 
-
 function App() {
   return (
  

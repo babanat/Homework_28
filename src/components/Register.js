@@ -50,7 +50,7 @@ function Register() {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-[#0e101c]">
-      <div className="max-w-md w-full p-8 bg-[#1f2233] text-white shadow-lg rounded-lg">
+      <div className="max-w-xl w-full  p-8 bg-[#1f2233] text-white shadow-lg rounded-lg mt-16">
         <h2 className="text-3xl font-light mb-6 text-center border-b border-blue-500 pb-4">Register</h2>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           {["name", "lastname", "phone", "email", "address", "city", "country", "zipCode"].map((field) => (
