@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Register from './components/Register';
 import TodoList from './components/TodoList';
 import NoteFound from "./components/NoteFound";
-import ErrorBoundary from './components/ErrorBoundary';
+import MyErrorBoundary from './components/ErrorBoundary';
 
 
 
@@ -13,13 +13,13 @@ function App() {
  
       <Router>
         <Header />
-        <ErrorBoundary>
+        <MyErrorBoundary>
           <Routes>
             <Route path="/register" element={<Register />} />
             <Route path="/todolist" element={<TodoList />} />
             <Route path="*" element={<NoteFound />} />
           </Routes>
-        </ErrorBoundary>
+        </MyErrorBoundary>
       </Router>
    
   );
